@@ -1,2 +1,2 @@
-# myarch-iso
-archiso build for myarch
+# myArch-iso
+archiso build for myArch
