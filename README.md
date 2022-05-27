@@ -1,2 +1,2 @@
-# myarchiso
+# myarch-iso
 archiso testing
