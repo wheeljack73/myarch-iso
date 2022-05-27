@@ -122,8 +122,4 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-# myarch plasma
-plasma-meta
-kde-applications-meta
-packagekit-qt5
-sddm
+# myarchiso
