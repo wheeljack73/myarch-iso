@@ -1,6 +1,8 @@
 #!/bin/bash
 #set -e
 
+./cleanup.sh
+
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
 git pull
@@ -27,3 +29,5 @@ git push -u origin main
 echo "################################################################"
 echo "###################    Git Push Done      ######################"
 echo "################################################################"
+#!/bin/bash
+#set -e
