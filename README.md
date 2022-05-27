@@ -1,2 +1,2 @@
 # myarch-iso
-archiso testing
+archiso build for myarch
