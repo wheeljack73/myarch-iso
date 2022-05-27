@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="myArchlinux"
+iso_name="myArch"
 iso_label="MYARCH_$(date +%Y%m)"
 iso_publisher="myArch Linux"
-iso_application="myArch Linux Installer"
+iso_application="myArch Installer"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="myarch"
 buildmodes=('iso')
