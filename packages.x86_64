@@ -123,3 +123,18 @@ xfsprogs
 xl2tpd
 zsh
 # myarchiso
+plasma-meta
+kde-system-meta
+kde-utilities-meta
+elisa
+kwave
+falkon
+ktorrent
+packagekit-qt5
+sddm
+bash-completion
+git
+base-devel
+lsb-release
+myarch-calamares
+myarch-calamares-config
