@@ -136,6 +136,7 @@ bash-completion
 git
 base-devel
 lsb-release
+myarch-keyring
 myarch-calamares
 myarch-calamares-config
 paru-bin
