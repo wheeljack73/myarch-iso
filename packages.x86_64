@@ -122,7 +122,16 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-# myarchiso
+# ORIGINAL ARCHISO LIST ENDS HERE
+
+# myArch
+sddm
+bash-completion
+myarch-keyring
+networkmanager
+
+# Plasma
+
 plasma-meta
 kde-system-meta
 kde-utilities-meta
@@ -130,13 +139,18 @@ elisa
 kwave
 falkon
 ktorrent
+kinit
 packagekit-qt5
-sddm
-bash-completion
+
+# Calamares
+myarch-calamares
+myarch-calamares-config
+#myarch-system-installation
+os-prober
+
+# Software
 git
 base-devel
 lsb-release
-myarch-keyring
-myarch-calamares
-myarch-calamares-config
+neofetch
 paru-bin
