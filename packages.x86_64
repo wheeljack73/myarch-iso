@@ -177,9 +177,9 @@ splix
 system-config-printer
 
 # ---Calamares
-xero-calamares
-calamares-config
-xerolinux-mirrorlist
+myarch-calamares
+myarch-calamares-config
+myarch-mirrorlist
 
 # ===================================================================
 #                .....These Stay Post Installation...
