@@ -1,3 +1,8 @@
+# ===================================================================
+#                     ...THE BIG PACKAGE LIST...
+# ===================================================================
+
+# ---archiso
 alsa-utils
 amd-ucode
 arch-install-scripts
@@ -6,11 +11,10 @@ b43-fwcutter
 base
 bind-tools
 brltty
-broadcom-wl
 btrfs-progs
 clonezilla
 cloud-init
-cryptsetup
+crda
 darkhttpd
 ddrescue
 dhclient
@@ -23,7 +27,6 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
-espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -44,16 +47,15 @@ irssi
 iw
 iwd
 jfsutils
+kinit
 kitty-terminfo
 less
-lftp
 libfido2
 libusb-compat
 linux
 linux-atm
 linux-firmware
 linux-firmware-marvell
-livecd-sounds
 lsscsi
 lvm2
 lynx
@@ -75,11 +77,11 @@ nilfs-utils
 nmap
 ntfs-3g
 nvme-cli
-open-iscsi
-open-vm-tools
 openconnect
+open-iscsi
 openssh
 openvpn
+os-prober
 partclone
 parted
 partimage
@@ -87,13 +89,10 @@ pcsclite
 ppp
 pptpclient
 pv
-qemu-guest-agent
-refind
 reflector
-reiserfsprogs
+#refind
 rp-pppoe
 rsync
-rxvt-unicode-terminfo
 screen
 sdparm
 sg3_utils
@@ -112,8 +111,6 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
-virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
@@ -121,36 +118,490 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
+
+# ---zsh
+exa
 zsh
-# ORIGINAL ARCHISO LIST ENDS HERE
+nerd-fonts-hack
 
-# myArch
-sddm
+# ---archiso-extra
+dialog
+dnsutils
+grub
+repoctl
+haveged
+logrotate
+ntp
+wget
+
+# Note: Everything above this line came from archiso-releng folder.
+
+# ===================================================================
+#                     ..........myArch...
+# ===================================================================
+
+# ---nVidia
+#nvidia-dkms
+#nvidia-utils
+#nvidia-settings
+
+# ---Video
+mesa
+#xf86-video-ati
+#xf86-video-amdgpu
+#xf86-video-intel
+#xf86-video-nouveau
+xf86-video-fbdev
+xf86-video-openchrome
+xf86-video-qxl
+xf86-video-vmware
+
+# ---Input
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+xf86-input-synaptics
+xf86-input-vmmouse
+xf86-input-void
+
+# ---Printer
+bluez-cups
+cups
+cups-filters
+cups-pdf
+ghostscript
+gsfonts
+gutenprint
+print-manager
+splix
+system-config-printer
+
+# ---Calamares
+xero-calamares
+calamares-config
+xerolinux-mirrorlist
+
+# ===================================================================
+#                .....These Stay Post Installation...
+# ===================================================================
+
+bash
 bash-completion
-myarch-keyring
+dex
+libxinerama
+make
+xorg-xkill
+xorg-xrdb
+
+# ===================================================================
+#                         ...Package Builds...
+# ===================================================================
+
+#cryptsetup
+#imwheel
+#brightnessctl
+#mkinitcpio-firmware
+
+# ===================================================================
+#                ...Packages Required for Building...
+# ===================================================================
+
+boost-libs
+ckbcomp
+gtk-update-icon-cache
+hwinfo
+kconfig
+ki18n
+kio
+kcoreaddons
+kiconthemes
+kpmcore
+polkit-qt5
+qt5-svg
+qt5-tools
+qt5-translations
+qt5-x11extras
+qt5-xmlpatterns
+solid
+wget
+xmlto
+yaml-cpp
+
+# ---networkmanager
 networkmanager
+network-manager-applet
 
-# Plasma
+# ===================================================================
+#                   ...Software from Arch Repos...
+# ===================================================================
 
-plasma-meta
-kde-system-meta
-kde-utilities-meta
-elisa
-kwave
-falkon
-ktorrent
-kinit
-packagekit-qt5
+# ---applications
+gmrun
+numlockx
+grub-customizer
 
-# Calamares
-myarch-calamares
-myarch-calamares-config
-#myarch-system-installation
-os-prober
+##Pamac GUI
+flatpak
+pamac-gtk
 
-# Software
-git
-base-devel
-lsb-release
+
+# ---weird
+jq
+figlet
+lm_sensors
+
+# ---fonts
+ttf-droid
+ttf-roboto
+otf-libertinus
+tex-gyre-fonts
+nerd-fonts-fira-code
+awesome-terminal-fonts
+adobe-source-sans-pro-fonts
+
+# ---theming
+kvantum
 neofetch
-paru-bin
+latte-dock
+
+# ---ricing
+#kde-rice
+#layan-kde-git
+kde-wallpapers
+#layan-gtk-theme-git
+#tela-circle-icon-theme-git
+
+# ---utilities
+appmenu-gtk-module
+arandr
+asciinema
+assimp
+boost
+cblas
+cifs-utils
+cmake
+cronie
+dconf-editor
+dmidecode
+dnsmasq
+duf
+edid-decode-git
+expac
+extra-cmake-modules
+file-roller
+fuse2
+fuse3
+fuseiso
+gcc
+gettext
+git
+gksu
+gnome-disk-utility
+graphviz
+grsync
+gtest
+gtk-doc
+gts
+hddtemp
+hw-probe
+intltool
+jsoncpp
+libmtp
+laptop-detect
+lhasa
+libinput
+lsb-release
+lzop
+meld
+meson
+mlocate
+netpbm
+ninja
+nmon
+nodejs
+node-gyp
+npm
+oniguruma
+p7zip
+perl-xml-parser
+pkgstats
+playerctl
+polkit
+dbus-python
+tree
+qt5-3d
+rhash
+s3fs-fuse
+semver
+sshfs
+unace
+unrar
+unzip
+vala
+vi
+vnstat
+w3m
+wmctrl
+xdo
+xdotool
+yakuake
+zenity
+zip
+alsi
+archey3
+appstream
+archiso
+downgrade
+htop
+hardcode-fixer-git
+inetutils
+inxi
+lshw
+synapse
+sysprof
+systemd-manager-git
+yad
+
+# ---gstreamer
+gstreamer
+gst-libav
+gst-plugins-base
+gst-plugins-bad
+gst-plugins-ugly
+
+# ---pulseaudio
+#pulseaudio
+#pulseaudio-alsa
+#pulseaudio-bluetooth
+#pulseaudio-qt
+#pulsemixer
+#pavucontrol
+#python-pulsectl
+
+# ---pipewire
+wireplumber
+pipewire-jack
+pipewire-support
+lib32-pipewire-jack
+
+# ---bluetooth
+blueberry
+bluez
+bluez-libs
+bluez-utils
+
+# ---network
+avahi
+nss-mdns
+smbclient
+net-tools
+traceroute
+modemmanager
+rate-mirrors-bin
+networkmanager-vpnc
+networkmanager-pptp
+networkmanager-openvpn
+networkmanager-openconnect
+mobile-broadband-provider-info
+
+# ---file management
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+ldmtool
+mtpfs
+udiskie
+udisks2
+
+# ---tumbler
+libgsf
+tumbler
+freetype2
+libopenraw
+poppler-qt5
+poppler-glib
+ffmpegthumbnailer
+
+# ---python and libs
+python-cffi
+python-numpy
+python-docopt
+python-pyaudio
+python-anytree
+python-pyparted
+python-pygments
+python-websockets
+
+# ===================================================================
+#                       ...myArch Selection...
+# ===================================================================
+
+# ---browser
+#firefox
+
+# ---cursors
+breeze
+
+# ---tools
+grub-tools
+mkinitcpio-openswap
+
+# ---AUR
+#yay-bin
+#paru-bin
+
+# ===================================================================
+#                            ...The Extras...
+# ===================================================================
+
+# ---xorg applications
+xorg-apps
+xorg-xinit
+xorg-server
+
+# ---driver for virtual machines
+spice-vdagent
+open-vm-tools
+qemu-guest-agent
+virtualbox-guest-utils
+
+# ---sddm display manager
+
+sddm
+
+# ---want to have base-devel group
+
+base-devel
+
+# ---want to have linux-headers
+
+linux-headers
+
+# ---want to have a desktop
+
+# ---Plasma group content Categorized
+# ---https://archlinux.org/groups/x86_64/plasma/
+
+# ---Essentials
+
+kwin
+milou
+breeze
+kcrash
+drkonqi
+kgamma5
+kscreen
+khotkeys
+sddm-kcm
+kmenuedit
+ksysguard
+bluedevil
+powerdevil
+libkscreen
+kinfocenter
+ksshaskpass
+kdecoration
+kglobalaccel
+libksysguard
+kde-dev-utils
+kscreenlocker
+xdg-user-dirs
+knotifications
+systemsettings
+kde-gtk-config
+packagekit-qt5
+qt5-websockets
+polkit-kde-agent
+kactivitymanagerd
+xdg-desktop-portal-kde
+
+# ---KDE Wayland
+
+#qt6-wayland
+#egl-wayland
+#xorg-xwayland
+#kwayland-server
+#kwayland-integration
+#plasma-wayland-session
+#plasma-wayland-protocols
+
+
+# ---Plasma Stuff
+
+plasma-nm
+plasma-pa
+plasma-vault
+plasma-desktop
+plasma-framework
+plasma-workspace
+plasma-integration
+plasma-thunderbolt
+plasma-systemmonitor
+plasma-browser-integration
+
+# ---Others
+
+pacman-contrib
+systemd-kcm
+ocs-url
+
+# ---KDE Applications group content Categorized
+# ---https://archlinux.org/groups/x86_64/kde-applications/
+
+# ---Utilities
+
+ark
+kgpg
+kate
+kfind
+kcalc
+kwrite
+dolphin
+kdialog
+konsole
+kalendar
+kmousetool
+ksystemlog
+khelpcenter
+markdownpart
+kwalletmanager
+
+# ---Networking
+
+kdeconnect
+zeroconf-ioslave
+kdenetwork-filesharing
+signon-kwallet-extension
+
+# ---Graphics
+
+svgpart
+gwenview
+spectacle
+kcolorchooser
+kdeplasma-addons
+kwin-scripts-forceblur
+kdegraphics-thumbnailers
+
+# ---Multimedia
+
+ffmpegthumbs
+
+# ---KDE-SDK
+
+lokalize
+dolphin-plugins
+kdesdk-thumbnailers
+
+# ---Complements
+
+kio-gdrive
+xsettingsd
+systemdgenie
+gnome-keyring
+qt5-virtualkeyboard
+#qt6-virtualkeyboard
+keditbookmarks

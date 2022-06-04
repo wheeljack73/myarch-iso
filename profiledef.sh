@@ -20,9 +20,6 @@ file_permissions=(
   ["/root/.automated_script.sh"]="0:0:755"
   ["/etc/polkit-1/rules.d"]="0:0:750"
   ["/etc/sudoers.d"]="0:0:750"
-  ["/usr/local/bin/choose-mirror"]="0:0:755"
-  ["/usr/local/bin/Installation_guide"]="0:0:755"
-  ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/myarch-before"]="0:0:755"
   ["/usr/local/bin/myarch-final"]="0:0:755"
 )

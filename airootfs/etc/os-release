@@ -1,0 +1,10 @@
+NAME="myArch"
+PRETTY_NAME="myArch"
+ID=myarch
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://somewhere.com"
+LOGO=xerolinux
+IMAGE_ID=xerolinux
+IMAGE_VERSION=2022.06
