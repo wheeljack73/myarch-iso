@@ -180,6 +180,7 @@ system-config-printer
 myarch-calamares
 myarch-calamares-config
 myarch-mirrorlist
+myarch-keyring
 
 # ===================================================================
 #                .....These Stay Post Installation...
@@ -197,10 +198,10 @@ xorg-xrdb
 #                         ...Package Builds...
 # ===================================================================
 
-#cryptsetup
+cryptsetup
 #imwheel
 #brightnessctl
-#mkinitcpio-firmware
+mkinitcpio-firmware
 
 # ===================================================================
 #                ...Packages Required for Building...
@@ -450,8 +451,8 @@ grub-tools
 mkinitcpio-openswap
 
 # ---AUR
-#yay-bin
-#paru-bin
+yay-bin
+paru-bin
 
 # ===================================================================
 #                            ...The Extras...
