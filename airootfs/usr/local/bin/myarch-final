@@ -18,10 +18,14 @@ echo "Cleanup autologin root"
 echo "#################################"
 rm -rf /etc/systemd/system/getty@tty1.service.d
 
+echo "Killing Pacman-Init"
+echo "#################################"
+rm /etc/systemd/system/multi-user.target.wants/pacman-init.service
+rm /etc/systemd/system/pacman-init.service
+
 echo "Setting editor to nano"
 echo "#################################"
 echo "EDITOR=nano" >> /etc/profile
-
 
 #Original cleanup
 echo "Cleanup original files"
@@ -31,9 +35,7 @@ rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
 mv /etc/myarch-release /etc/lsb-release
-
-#cleanup xfce
-for i in `ls /home/`; do rm -rf /home/$i/*/calamares.desktop || exit 0; done
+rm -rf /home/liveuser/
 
 echo "Permission of root"
 echo "#################################"
@@ -42,4 +44,8 @@ chmod -v 750 /root
 echo "#################################"
 echo "End myarch-final"
 echo "#################################"
+rm /usr/local/bin/ram
+rm /usr/local/bin/vcheck
+rm /usr/local/bin/welcome
+rm /usr/local/bin/all-cores
 rm /usr/local/bin/myarch-final
