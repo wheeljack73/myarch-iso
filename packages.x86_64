@@ -242,8 +242,8 @@ numlockx
 grub-customizer
 
 ##Pamac GUI
-flatpak
-pamac-gtk
+#flatpak
+#pamac-gtk
 
 
 # ---weird
@@ -606,3 +606,6 @@ gnome-keyring
 qt5-virtualkeyboard
 #qt6-virtualkeyboard
 keditbookmarks
+
+# Fix for calamares
+xkeyboard-config-bbkt
